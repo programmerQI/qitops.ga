@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <<link rel="stylesheet" href="login1.css">
-    <title></title>
+    <title>下载聊1.0</title>
   </head>
   <div class="login-page">
     <div class="form">
@@ -14,10 +14,17 @@
         <button>create</button>
         <p class="message">Already registered? <a href="#">Sign In</a></p>
       </form>
-      <form class="login-form">
+      <!--<form class="login-form">
         <input type="text" placeholder="username"/>
         <input type="password" placeholder="password"/>
         <button>login</button>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
+      </form>-->
+      <form class="login-form" method="post" action="\test\loginServlet">
+        <input name="username" type="text" placeholder="请输入姓名"/>
+        <input name="password" type="password" placeholder="请输入密码"/>
+        <!--<button >login</button>-->
+        <button type="submit" name="button">下载</button>
         <p class="message">Not registered? <a href="#">Create an account</a></p>
       </form>
     </div>
